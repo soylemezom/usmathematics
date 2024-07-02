@@ -5,11 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Universal School of Math</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .moving-title {
+            display: inline-block;
+            white-space: nowrap;
+            animation: scroll-left 10s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Universal School of Mathematicossss</h1>
+        <h1 class="moving-title">Universal School of Mathematicossss</h1>
         <p>Universal Math Excellence!</p>
+    </header>
+</body>
+</html>
+
     </header>
     <nav>
         <a href="index.html">Home</a>
